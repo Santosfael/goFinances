@@ -61,7 +61,7 @@ export function Register() {
         name: 'Categoria'
     });
 
-    const navigation = useNavigation<NavigationProps>();
+    //const navigation = useNavigation<NavigationProps>();
 
     const {
         control,
@@ -77,7 +77,9 @@ export function Register() {
     }
 
     function handleOpenSelectCategoryModal() {
-        setCategoryModalOpen(true);
+        setTimeout(() => {
+            setCategoryModalOpen(true);
+        }, 1000);
     }
 
     function handleCloseSelectCategoryModal() {
@@ -119,7 +121,7 @@ export function Register() {
                 name: 'Categoria'
             });
 
-            navigation.navigate('Listagem');
+            //navigation.navigate('Listagem');
 
         } catch (error) {
             console.log(error);
@@ -186,6 +188,7 @@ export function Register() {
                         </TransactionsTypes>
 
                         <CategorySelectButton
+                            testID='button-category'
                             title={category.name}
                             onPress={handleOpenSelectCategoryModal}
                         />
@@ -197,7 +200,7 @@ export function Register() {
                     />
                 </Form>
 
-                <Modal visible={categoryModalOpen}>
+                <Modal visible={categoryModalOpen} testID='modal-category'>
                     <CategorySelect
                         category={category}
                         setCategory={setCategory}
