@@ -1,5 +1,8 @@
 # GoFinances
 
+![Capa_projeto](./.github/Capa.png)
+\
+\
 É um dos projetos que são desenvolvidos na trilha de React Native da equipe Rocketseat, para colocar em pratica todo o aprendizado adquirido.\
 O projeto e desenvolvido pela cli do [Expo](https://docs.expo.dev/), tem como objetivo o desenvolvimento de uma aplicação onde usuário irá logar através de uma conta Google no Android e iOS e com uma conta Apple no iOS.\
 Na aplicação é possível fazer a inclusão de informações de gastos e ganhos para que o usuário possa fazer o seu controle financeiro, ao incluir uma informação o usuário tem a opção de definir uma categoria para a informação que está sendo incluida, sendo elas:
